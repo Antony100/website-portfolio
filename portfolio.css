@@ -1,0 +1,64 @@
+body {
+    background-color: rgba(239, 235, 228, 1);
+}
+
+.main-container {
+    width: 100vw;
+    max-width: 1280px;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 7.5px;
+    display: flex;
+    position: relative;
+    max-height: 700px;
+    height: 100vh;
+    align-items: center;
+    top: 70px;
+}
+
+
+.corners {
+    --s: 50px;
+    /* the size on the corner */
+    --t: 5px;
+    /* the thickness of the border */
+    --g: 20px;
+    /* the gap between the border and image */
+
+    padding: calc(var(--g) + var(--t));
+    outline: var(--t) solid #646464;
+    /* the color here */
+    outline-offset: calc(-1*var(--t));
+    mask:
+        conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+        linear-gradient(#000 0 0) content-box;
+    transition: .4s;
+}
+
+/* .corners:hover {
+    outline-offset: calc(var(--g)/-1);
+} */
+
+.background {
+    background-color: aqua;
+}
+
+.vl {
+    border-right: 3px solid #646464;
+    height: 500px;
+}
+
+.menu-links {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #646464;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.menu-links:hover {
+    color: black;
+}
