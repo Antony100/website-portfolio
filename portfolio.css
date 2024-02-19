@@ -62,3 +62,27 @@ body {
 .menu-links:hover {
     color: black;
 }
+
+.profile-pic {
+    width: 100px;
+    /* Adjust the width and height to your desired size */
+    height: 100px;
+    border: 3px solid black;
+    /* Set the border color and thickness */
+    border-radius: 50%;
+    /* Make the border circular */
+    overflow: hidden;
+    /* Hide any content that extends beyond the circular border */
+    padding: 0;
+    /* Remove any padding */
+}
+
+.profile-pic img {
+    width: 100%;
+    /* Ensure the image fills the circular container */
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image fills the circular container without distortion */
+    border-radius: 50%;
+    /* Ensure the image itself is also circular */
+}
