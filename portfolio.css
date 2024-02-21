@@ -1,0 +1,128 @@
+body {
+    background-color: rgba(239, 235, 228, 1);
+}
+
+.main-container {
+    width: 100vw;
+    max-width: 1280px;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 7.5px;
+    display: flex;
+    position: relative;
+    max-height: 700px;
+    height: 100vh;
+    align-items: center;
+    top: 70px;
+}
+
+
+.corners {
+    --s: 50px;
+    /* the size on the corner */
+    --t: 5px;
+    /* the thickness of the border */
+    --g: 20px;
+    /* the gap between the border and image */
+
+    padding: calc(var(--g) + var(--t));
+    outline: var(--t) solid #646464;
+    /* the color here */
+    outline-offset: calc(-1*var(--t));
+    mask:
+        conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+        linear-gradient(#000 0 0) content-box;
+    transition: .4s;
+}
+
+/* .corners:hover {
+    outline-offset: calc(var(--g)/-1);
+} */
+
+.background {
+    background-color: aqua;
+}
+
+.vl {
+    border-right: 3px solid #646464;
+    height: 500px;
+}
+
+.vl:hover {
+    border-right: 3px solid black;
+}
+
+.menu-links {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #646464;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.menu-links:hover {
+    color: #222d34;
+}
+
+.profile-pic {
+    width: 110px;
+    /* Adjust the width and height to your desired size */
+    height: 110px;
+    border: 3px solid black;
+    /* Set the border color and thickness */
+    border-radius: 50%;
+    /* Make the border circular */
+    overflow: hidden;
+    /* Hide any content that extends beyond the circular border */
+    padding: 0;
+    /* Remove any padding */
+}
+
+.profile-pic img {
+    width: 100%;
+    /* Ensure the image fills the circular container */
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image fills the circular container without distortion */
+    border-radius: 50%;
+    /* Ensure the image itself is also circular */
+}
+
+#displayArea {
+    margin-left: 50px;
+    margin-right: 0px;
+}
+
+.project-img {
+    max-height: 100px;
+}
+
+.project-listing {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+
+.icons {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    display: flex;
+    /* Add flexbox */
+    flex-direction: row;
+    /* Arrange icons horizontally */
+}
+
+.icons i {
+    margin-left: 10px;
+    font-size: 30px;
+    color: #646464;
+    /* Add some spacing between icons */
+}
+
+.icons i:hover {
+    color: #f85525;
+}
