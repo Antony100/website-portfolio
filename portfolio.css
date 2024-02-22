@@ -97,22 +97,22 @@ body {
     padding-top: 50px;
 }
 
+.project-listing p {
+    text-align: justify;
+}
 
 .icons {
     position: absolute;
     top: 25px;
     right: 25px;
     display: flex;
-    /* Add flexbox */
     flex-direction: row;
-    /* Arrange icons horizontally */
 }
 
 .icons i {
     margin-left: 10px;
     font-size: 30px;
     color: #646464;
-    /* Add some spacing between icons */
 }
 
 .icons i:hover {
@@ -126,4 +126,25 @@ body {
 .carousel-control-prev,
 .carousel-control-next {
     top: unset !important;
+}
+
+.tech-icons {
+    justify-content: end;
+    display: flex;
+}
+
+.tech-icons img {
+    max-height: 30px;
+    padding-right: 10px;
+    filter: invert(39%) sepia(0%) saturate(1%) hue-rotate(137deg) brightness(99%) contrast(98%);
+
+}
+
+.tech-icons img:hover {
+    filter: unset;
+}
+
+#railwayIcon {
+    background-clip: content-box;
+    background-color: #000;
 }
