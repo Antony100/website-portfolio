@@ -31,11 +31,11 @@
                         <img src="images/profile.jpeg" alt="profile pic">
                     </div>
                 </div>
-                <div id="aboutLink" class="row menu-links">
-                    <a href="#" class="menu-links">About</a>
+                <div id="about" class="row menu-links">
+                    <a id="aboutLink" href="#" class="menu-links">About</a>
                 </div>
-                <div id="projectLink" class="row">
-                    <a href="#" class="menu-links">Projects</a>
+                <div id="projects" class="row">
+                    <a id="projectsLink" href="#" class="menu-links">Projects</a>
                 </div>
             </div>
 
@@ -43,12 +43,11 @@
 
                 <div id="displayArea" class="row">
 
+                    <!-- projects carousel -->
                     <div id="carouselExample" class="carousel slide" data-bs-theme="dark">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <!-- First carousel item -->
                                 <div class="row project-listing">
-                                    <!-- First project listing -->
                                     <div class="col-3">
                                         <img class="project-img" src="images/philo-site.png" alt="">
                                     </div>
@@ -61,7 +60,6 @@
 
                                 </div>
                                 <div class="row project-listing">
-                                    <!-- Second project listing -->
                                     <div class="col-3">
                                         <img class="project-img" src="images/philo-site.png" alt="">
                                     </div>
@@ -85,19 +83,54 @@
                                             about and FAQ page also included.</p>
                                     </div>
                                 </div>
+
+                                <div class="row project-listing">
+                                    <div class="col-3">
+                                        <img class="project-img" src="images/philo-site.png" alt="">
+                                    </div>
+                                    <div class="col-8">
+                                        <h3>Philosophy Site</h3>
+                                        <p>A resource for the philosophy group that I run. Posts are added according to
+                                            the topic discussed for each session. Admin page used for CRUD operations,
+                                            about and FAQ page also included.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <div class="row-controls">
+                            <button id="carouselBtn" class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExample" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                        </div>
 
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
+                    </div>
+
+                    <!-- About section -->
+                    <div id="aboutSection">
+                        <h2>About</h2>
+                        <hr>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat corporis necessitatibus
+                            fugiat
+                            ad
+                            laudantium dolorem? Eveniet commodi, ipsa laboriosam incidunt similique sit, obcaecati
+                            dolore
+                            odit
+                            dicta perspiciatis, eligendi aspernatur nesciunt. Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Eaque commodi a neque aut delectus quis non harum dolore? Beatae, maxime
+                            necessitatibus! Et accusamus iure natus magnam, repellat rem. Eligendi, eaque. Lorem ipsum
+                            dolor
+                            sit, amet consectetur adipisicing elit. Iste, molestiae? Veritatis, error! Dolorum quia
+                            facilis
+                            nobis magnam tenetur culpa ipsa. Sapiente laudantium molestiae soluta aliquid eum pariatur
+                            beatae
+                            exercitationem nemo?</p>
                     </div>
 
                 </div>

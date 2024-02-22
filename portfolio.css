@@ -50,7 +50,7 @@ body {
 }
 
 .vl:hover {
-    border-right: 3px solid black;
+    border-right: 3px solid #ce4c26;
 }
 
 .menu-links {
@@ -69,26 +69,18 @@ body {
 
 .profile-pic {
     width: 110px;
-    /* Adjust the width and height to your desired size */
     height: 110px;
     border: 3px solid black;
-    /* Set the border color and thickness */
     border-radius: 50%;
-    /* Make the border circular */
     overflow: hidden;
-    /* Hide any content that extends beyond the circular border */
     padding: 0;
-    /* Remove any padding */
 }
 
 .profile-pic img {
     width: 100%;
-    /* Ensure the image fills the circular container */
     height: 100%;
     object-fit: cover;
-    /* Ensure the image fills the circular container without distortion */
     border-radius: 50%;
-    /* Ensure the image itself is also circular */
 }
 
 #displayArea {
@@ -125,4 +117,13 @@ body {
 
 .icons i:hover {
     color: #f85525;
+}
+
+#carouselExample {
+    display: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: unset !important;
 }
