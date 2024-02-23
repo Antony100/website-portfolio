@@ -144,15 +144,19 @@ body {
     filter: unset;
 }
 
-#railwayIcon {
+/* #railwayIcon {
     background-clip: content-box;
     background-color: #000;
-}
+} */
 
 .project-listing:hover .project-img {
     transform: scale(1.4);
     transform-origin: left top;
     transition: transform 0.3s ease;
+}
+
+.project-listing:hover #railwayIcon {
+    filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(166deg) brightness(24%) contrast(109%);
 }
 
 .hvr-sweep-to-right {
