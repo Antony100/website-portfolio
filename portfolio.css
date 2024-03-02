@@ -1,5 +1,6 @@
 body {
     background-color: rgba(239, 235, 228, 1);
+    color: #414141
 }
 
 .main-container {
@@ -259,4 +260,8 @@ body {
 
 .txt-center {
     text-align: center;
+}
+
+#aboutSection {
+    text-align: justify;
 }
