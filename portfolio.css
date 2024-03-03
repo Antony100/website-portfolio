@@ -247,7 +247,7 @@ body {
     right: 51%;
     bottom: 0;
     background: #f85525;
-    height: 3px;
+    height: 2px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
     -webkit-transition-duration: 0.3s;
