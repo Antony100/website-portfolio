@@ -1,6 +1,7 @@
 body {
     background-color: rgba(239, 235, 228, 1);
-    color: #414141
+    color: #414141;
+    font-family: "Montserrat", sans-serif;
 }
 
 .main-container {
@@ -219,7 +220,6 @@ body {
 
     padding: calc(var(--g) + var(--t));
     outline: var(--t) solid #646464;
-    /* the color here */
     outline-offset: calc(-1*var(--t));
     mask:
         conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0/calc(100% - var(--s)) calc(100% - var(--s)),
@@ -274,4 +274,8 @@ body {
 
 .project-links:hover {
     color: #404040;
+}
+
+#headline {
+    font-size: 0.85rem;
 }
