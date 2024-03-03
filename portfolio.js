@@ -16,3 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 })
 
+// Add this to your JavaScript section or an external JS file
+function displayFullImage(src) {
+    var fullImg = document.getElementById("fullImage");
+    fullImg.src = src;
+    var modal = new bootstrap.Modal(document.getElementById('fullImageModal'), {
+        keyboard: true
+    });
+    modal.show();
+}

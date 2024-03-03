@@ -1,5 +1,6 @@
 body {
     background-color: rgba(239, 235, 228, 1);
+    color: #414141
 }
 
 .main-container {
@@ -145,6 +146,7 @@ body {
     transform: scale(1.2);
     transform-origin: left top;
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 /* #recipeBook .project-listing:hover .project-img {
@@ -259,4 +261,8 @@ body {
 
 .txt-center {
     text-align: center;
+}
+
+#aboutSection {
+    text-align: justify;
 }
