@@ -63,16 +63,17 @@
                             <div class="carousel-item active">
                                 <div class="row project-listing hvr-fade">
                                     <div class="col-3">
-                                        <img class="project-img" src="images/philo-site.png" alt="Philosophy-site">
+                                        <img class="project-img" src="images/philo-site.png" alt="Philosophy-site"
+                                            onclick="displayFullImage('images/philo-site.png')">
                                     </div>
-                                    <div class="col-8 ">
+                                    <div class=" col-8 ">
                                         <h3>Philosophy Site</h3>
                                         <p>A resource for the philosophy group that I run. Posts are added according
                                             to
                                             the topic discussed for each session. Admin page used for CRUD
                                             operations,
                                             about and FAQ page also included.</p>
-                                        <div class="tech-icons">
+                                        <div class=" tech-icons">
                                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
                                                 title="Python" />
                                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
@@ -95,7 +96,8 @@
 
                                 <div class="row project-listing hvr-fade">
                                     <div class="col-3">
-                                        <img class="project-img" src="images/recipe-book-js.png" alt="Recipe Book">
+                                        <img class="project-img" src="images/recipe-book-js.png" alt="Recipe Book"
+                                            onclick="displayFullImage('images/recipe-book-js.png')">
                                     </div>
                                     <div class="col-8">
                                         <h3>Recipe Book</h3>
@@ -131,7 +133,8 @@
                                 <div class="row project-listing hvr-fade">
                                     <div class="col-3">
                                         <img class="project-img" src="images/draft-dashboard.png"
-                                            alt="draft=league-dashboard">
+                                            alt="draft-league-dashboard"
+                                            onclick="displayFullImage('images/draft-dashboard.png')">
                                     </div>
                                     <div class="col-8">
                                         <h3>Fantasy League Draft Dashboard</h3>
@@ -164,7 +167,8 @@
 
                                 <div class="row project-listing hvr-fade">
                                     <div class="col-3">
-                                        <img class="project-img" src="images/tts-gui.png" alt="Text-to-Speech">
+                                        <img class="project-img" src="images/tts-gui.png" alt="Text-to-Speech"
+                                            onclick="displayFullImage('images/tts-gui.png')">
                                     </div>
                                     <div class="col-8">
                                         <h3>Text to Speech Converter</h3>
@@ -227,7 +231,22 @@
             </div>
 
         </div>
-
+        <div class="modal fade" id="fullImageModal" tabindex="-1" aria-labelledby="fullImageModal" keyboard="true"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-fluid" id="fullImage">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
