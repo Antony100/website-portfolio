@@ -266,3 +266,12 @@ body {
 #aboutSection {
     text-align: justify;
 }
+
+.project-links {
+    text-decoration: none;
+    color: #646464;
+}
+
+.project-links:hover {
+    color: #404040;
+}
