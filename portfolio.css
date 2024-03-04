@@ -92,8 +92,8 @@ body {
 }
 
 .project-listing {
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .project-listing p {
@@ -204,7 +204,7 @@ body {
 }
 
 .row-controls {
-    margin-top: 41px;
+    margin-top: 25px;
     padding-top: 25px;
 }
 
