@@ -268,7 +268,8 @@ body {
     right: 0;
 }
 
-@media (max-width: 480px) {
+/* MEDIA QUERIES */
+@media (max-width: 900px) {
     .main-container {
         flex-direction: column;
         top: 0;
@@ -346,5 +347,34 @@ body {
 
     .project-listing .tech-icons img {
         filter: unset;
+    }
+
+    .project-listing:hover .project-img {
+        transform: unset;
+    }
+}
+
+@media (min-width: 900px) and (max-width:1400px) {
+    .main-container {
+        /* width: 95vw; */
+        width: auto;
+        height: unset;
+        max-height: unset;
+    }
+
+    .container {
+        min-width: 900px;
+    }
+
+    .project-listing:hover .project-img {
+        transform: unset;
+    }
+
+    .project-img {
+        max-width: 110%;
+    }
+
+    .carousel-item .row {
+        margin-top: 35px;
     }
 }
